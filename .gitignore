@@ -1,0 +1,15 @@
+# Logs
+MediFix/run/error_log
+*.log
+
+# Uploads
+MediFix/run/uploads/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Temp Files
+/tmp/
+.vscode/
+.idea/
