@@ -22,6 +22,9 @@
     <div class="bg-blob bg-blob-1"></div>
     <div class="bg-blob bg-blob-2"></div>
 
+    <!-- Theme Toggle -->
+    <button class="theme-toggle-btn" style="position:fixed; top:20px; right:20px; z-index:10;" title="Toggle Theme"><i class="ti ti-sun"></i></button>
+
     <div class="login-content">
       <div class="glass-card">
         <a href="./index.php" class="text-nowrap logo-img text-center d-block py-3 w-100 mb-4">
@@ -67,6 +70,7 @@
   <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
   <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/js/premium-interactions.js"></script>
+  <script src="../assets/js/theme-toggle.js"></script>
 </body>
 
 </html>

@@ -12,6 +12,7 @@ if (!isset($_SESSION['hbUser_Admin'])) {
   <title>ODAIS</title>
   <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.png" />
   <link rel="stylesheet" href="../assets/css/styles.min.css" />
+    <link rel="stylesheet" href="../assets/css/premium-theme.css" />
 </head>
 
 <body>
@@ -53,14 +54,19 @@ if (!isset($_SESSION['hbUser_Admin'])) {
           </ul>
           <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
             <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
+              <li class="nav-item"><button class="theme-toggle-btn" title="Toggle Theme"><i class="ti ti-sun"></i></button></li>
+              
               <li class="nav-item dropdown">
                 <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
                   aria-expanded="false">
-                  <p class="mb-0 fs-4" style="margin-right: 10px;"><b><?php echo $_SESSION['hbUser_Name']; ?> - <?php echo $_SESSION['hbUser_Type']; ?></b></p>
                   <img src="../assets/images/profile/user-1.jpg" alt="" width="35" height="35" class="rounded-circle">
                 </a>
                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
                   <div class="message-body">
+                    <div class="px-4 py-3 border-bottom mb-2">
+                      <h6 class="mb-0 fs-4 fw-semibold"><?php echo $_SESSION['hbUser_Name']; ?></h6>
+                      <span class="text-muted fs-3"><?php echo $_SESSION['hbUser_Type']; ?></span>
+                    </div>
                     <a href="index" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
                   </div>
                 </div>
@@ -134,6 +140,7 @@ if (!isset($_SESSION['hbUser_Admin'])) {
   <script src="../assets/js/sidebarmenu.js"></script>
   <script src="../assets/js/app.min.js"></script>
   <script src="../assets/libs/simplebar/dist/simplebar.js"></script>
+<script src="../assets/js/theme-toggle.js"></script>
 </body>
 
 </html>

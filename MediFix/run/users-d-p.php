@@ -12,6 +12,7 @@ if (!isset($_SESSION['hbUser_Doctor'])) {
   <title>MediFix</title>
   <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.png" />
   <link rel="stylesheet" href="../assets/css/styles.min.css" />
+    <link rel="stylesheet" href="../assets/css/premium-theme.css" />
 </head>
 
 <body>
@@ -52,13 +53,18 @@ if (!isset($_SESSION['hbUser_Doctor'])) {
           </ul>
           <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
             <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
+              <li class="nav-item"><button class="theme-toggle-btn" title="Toggle Theme"><i class="ti ti-sun"></i></button></li>
+              
               <li class="nav-item dropdown">
                 <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown" aria-expanded="false">
-                  <p class="mb-0 fs-4" style="margin-right: 10px;"><b><?php echo $_SESSION['hbUser_Name']; ?> - <?php echo $_SESSION['hbUser_Type']; ?></b></p>
                   <img src="../assets/images/profile/user-1.jpg" alt="" width="35" height="35" class="rounded-circle">
                 </a>
                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
                   <div class="message-body">
+                    <div class="px-4 py-3 border-bottom mb-2">
+                      <h6 class="mb-0 fs-4 fw-semibold"><?php echo $_SESSION['hbUser_Name']; ?></h6>
+                      <span class="text-muted fs-3"><?php echo $_SESSION['hbUser_Type']; ?></span>
+                    </div>
                     <a href="index" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
                   </div>
                 </div>
@@ -73,7 +79,7 @@ if (!isset($_SESSION['hbUser_Doctor'])) {
         <div class="col-lg-12 d-flex align-items-stretch">
           <div class="card w-100">
             <div class="card-body p-4">
-              <h5 class="card-title fw-semibold mb-4">Tehcnicians List</h5>
+              <h5 class="card-title fw-semibold mb-4">Technicians List</h5>
               <?php
               if (isset($_GET['new_user_added'])) {
                 echo "<div class='alert alert-success' role='alert'>
@@ -158,6 +164,7 @@ if (!isset($_SESSION['hbUser_Doctor'])) {
   <script src="../assets/libs/apexcharts/dist/apexcharts.min.js"></script>
   <script src="../assets/libs/simplebar/dist/simplebar.js"></script>
   <script src="../assets/js/dashboard.js"></script>
+<script src="../assets/js/theme-toggle.js"></script>
 </body>
 
 </html>

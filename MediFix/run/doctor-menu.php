@@ -12,32 +12,20 @@
                 <span class="hide-menu">Dashboard</span>
             </a>
         </li>
-        <li class="nav-small-cap">
-            <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-            <span class="hide-menu">OPERATIONS</span>
-        </li>
-        <li class="sidebar-item">
-            <a class="sidebar-link" href="doctors-list-d-p" aria-expanded="false">
-                <span>
-                    <i class="ti ti-users"></i>
-                </span>
-                <span class="hide-menu">Doctors</span>
-            </a>
-        </li>
-        <li class="sidebar-item">
-            <a class="sidebar-link" href="users-d-p" aria-expanded="false">
-                <span>
-                    <i class="ti ti-users"></i>
-                </span>
-                <span class="hide-menu">Technicians</span>
-            </a>
-        </li>
         <li class="sidebar-item">
             <a class="sidebar-link" href="job-requests" aria-expanded="false">
                 <span>
                     <i class="ti ti-article"></i>
                 </span>
                 <span class="hide-menu">Job Requests</span>
+            </a>
+        </li>
+        <li class="sidebar-item">
+            <a class="sidebar-link" href="ask-ai-general" aria-expanded="false">
+                <span>
+                    <i class="ti ti-robot"></i>
+                </span>
+                <span class="hide-menu">AI Assistant</span>
             </a>
         </li>
         <li class="nav-small-cap">

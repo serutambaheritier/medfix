@@ -12,6 +12,7 @@ if (!isset($_SESSION['hbUser_Admin'])) {
   <title>ODAIS</title>
   <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.png" />
   <link rel="stylesheet" href="../assets/css/styles.min.css" />
+    <link rel="stylesheet" href="../assets/css/premium-theme.css" />
 </head>
 
 <body>
@@ -53,6 +54,8 @@ if (!isset($_SESSION['hbUser_Admin'])) {
           </ul>
           <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
             <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
+              <li class="nav-item"><button class="theme-toggle-btn" title="Toggle Theme"><i class="ti ti-sun"></i></button></li>
+              
               <li class="nav-item dropdown">
                 <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
                   aria-expanded="false">
@@ -74,7 +77,7 @@ if (!isset($_SESSION['hbUser_Admin'])) {
         <div class="container-fluid">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title fw-semibold mb-4">Add New Doctor</h5>
+              <h5 class="card-title fw-semibold mb-4">Add New Department User</h5>
               
                   <form method="POST" action="server.php">
                       
@@ -84,15 +87,16 @@ if (!isset($_SESSION['hbUser_Admin'])) {
                     </div>
 
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Specification</label>
+                      <label for="exampleInputEmail1" class="form-label">Department / Area</label>
                       <select type="text" class="form-control" name="specification">
-                        <option value="" selected disabled>Select Doctor's Specification</option>
-                        <option>General Medecide</option>
-                        <option>Surgeon</option>
-                        <option>Dentist</option>
-                        <option>Pediatrician</option>
-                        <option>Phthalmologist</option>
-                        <option>Obstetrician </option>
+                        <option value="" selected disabled>Select Department</option>
+                        <option>Radiology</option>
+                        <option>Laboratory</option>
+                        <option>Emergency Room</option>
+                        <option>ICU</option>
+                        <option>Outpatient Clinic</option>
+                        <option>Surgery Unit</option>
+                        <option>Bio-Medical Dept</option>
                       </select>
                     </div>
                     
@@ -125,6 +129,7 @@ if (!isset($_SESSION['hbUser_Admin'])) {
   <script src="../assets/js/sidebarmenu.js"></script>
   <script src="../assets/js/app.min.js"></script>
   <script src="../assets/libs/simplebar/dist/simplebar.js"></script>
+<script src="../assets/js/theme-toggle.js"></script>
 </body>
 
 </html>
