@@ -24,7 +24,7 @@ if (!isset($_SESSION['hbUser_Admin'])) {
       <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
           <a href="./index" class="text-nowrap logo-img">
-            <img src="../assets/images/logos/dark-logo.svg" width="180" alt="" class="logo-invert" />
+            <img src="../assets/images/logos/masaka-logo.png" width="180" alt="" class="logo-invert" />
           </a>
           <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
             <i class="ti ti-x fs-8"></i>
@@ -91,10 +91,10 @@ if (!isset($_SESSION['hbUser_Admin'])) {
 
 
       <div class="py-6 px-6 text-center">
-        <img src="../assets/images/logos/dark-logo.svg" width="180" alt="" class="logo-invert" />
+        <img src="../assets/images/logos/masaka-logo.png" width="180" alt="" class="logo-invert" />
         <br><br>
         <p class="mb-0 fs-4"><b>Logged in as an <?php echo $_SESSION['hbUser_Type']; ?>, <?php echo $_SESSION['hbUser_Name']; ?></b></p>
-        <p class="mb-0 fs-4">Designed and Developed by INES</p>
+        <p class="mb-0 fs-4">Masaka Hospital</p>
       </div>
     </div>
   </div>

@@ -20,7 +20,7 @@
             <div class="card mb-0">
               <div class="card-body">
                 <a href="./index" class="text-nowrap logo-img text-center d-block py-3 w-100">
-                  <img src="../assets/images/logos/dark-logo.svg" width="180" alt="">
+                  <img src="../assets/images/logos/masaka-logo.png" width="180" alt="">
                 </a>
                 <p class="text-center">A user-friendly and simplified way of troubleshooting and maintain of medical equipment, ensuring optimal performance and reliability.</p>
 

@@ -24,7 +24,7 @@ if (!isset($_SESSION['hbUser_Tech'])) {
       <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
           <a href="./index" class="text-nowrap logo-img">
-            <img src="../assets/images/logos/dark-logo.svg" width="180" alt="" />
+            <img src="../assets/images/logos/masaka-logo.png" width="180" alt="" />
           </a>
           <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
             <i class="ti ti-x fs-8"></i>
@@ -152,7 +152,7 @@ if (!isset($_SESSION['hbUser_Tech'])) {
 
 
       <div class="py-6 px-6 text-center">
-        <p class="mb-0 fs-4">Designed and Developed by Jemima</p>
+        <p class="mb-0 fs-4">Masaka Hospital</p>
       </div>
     </div>
   </div>

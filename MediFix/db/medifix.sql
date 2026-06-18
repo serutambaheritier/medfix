@@ -1,31 +1,14 @@
--- phpMyAdmin SQL Dump
--- version 5.2.1
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Generation Time: Jul 10, 2025 at 04:48 PM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.0.30
-
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
-
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
 /*!40101 SET NAMES utf8mb4 */;
 
---
--- Database: `medifix`
---
-
--- --------------------------------------------------------
-
---
--- Table structure for table `admin`
---
+CREATE DATABASE IF NOT EXISTS `medifix` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `medifix`;
 
 CREATE TABLE `admin` (
   `id` int(11) NOT NULL,
@@ -35,18 +18,8 @@ CREATE TABLE `admin` (
   `password` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `admin`
---
-
 INSERT INTO `admin` (`id`, `fullname`, `phone`, `username`, `password`) VALUES
 (2, 'NSENGIYUMVA', '0785501115', 'admin@gmail.com', '123');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `dataset`
---
 
 CREATE TABLE `dataset` (
   `id` int(11) NOT NULL,
@@ -54,10 +27,6 @@ CREATE TABLE `dataset` (
   `cause` text NOT NULL,
   `solution` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `dataset`
---
 
 INSERT INTO `dataset` (`id`, `issue`, `cause`, `solution`) VALUES
 (1, 'Failure to deliver anesthetic gas', 'Faulty vaporizer, empty gas cylinder, or system leak', 'Check vaporizer settings, refill gas cylinder, and inspect for leaks'),
@@ -161,12 +130,6 @@ INSERT INTO `dataset` (`id`, `issue`, `cause`, `solution`) VALUES
 (99, 'Blocked exhaust port', 'Debris or obstruction in exhaust port', 'Clear blockage, regularly inspect and maintain exhaust ports'),
 (100, 'Software incompatibility with peripherals', 'New peripheral devices not compatible with current software', 'Update software to ensure compatibility, contact manufacturer support for guidance');
 
--- --------------------------------------------------------
-
---
--- Table structure for table `doctors`
---
-
 CREATE TABLE `doctors` (
   `id` int(11) NOT NULL,
   `fullname` varchar(100) NOT NULL,
@@ -177,18 +140,8 @@ CREATE TABLE `doctors` (
   `deleted` int(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `doctors`
---
-
 INSERT INTO `doctors` (`id`, `fullname`, `specification`, `email`, `phone`, `password`, `deleted`) VALUES
 (1, 'IHUMURIZA  Gaella', 'Surgeon', 'ihumuriza@gmail.com', '0780471000', '456', 0);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `jobs`
---
 
 CREATE TABLE `jobs` (
   `id` int(11) NOT NULL,
@@ -202,18 +155,8 @@ CREATE TABLE `jobs` (
   `status` int(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `jobs`
---
-
 INSERT INTO `jobs` (`id`, `code`, `equipment`, `givenby`, `airef`, `info`, `tech`, `recdt`, `status`) VALUES
 (1, 'MediFix-1752156242', '0011', 1, 0, 'Machine making noise during operation', '1752157341', '1752156242', 2);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `jobsdone`
---
 
 CREATE TABLE `jobsdone` (
   `id` varchar(100) NOT NULL,
@@ -225,18 +168,8 @@ CREATE TABLE `jobsdone` (
   `recdt` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `jobsdone`
---
-
 INSERT INTO `jobsdone` (`id`, `problem`, `action`, `spare`, `timespent`, `tech`, `recdt`) VALUES
 ('1752157341', 'machine making noise', 'I solved the problem', 'screws', '2 hrs', 1, '1752157341');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `users`
---
 
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
@@ -248,78 +181,36 @@ CREATE TABLE `users` (
   `deleted` int(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `users`
---
-
 INSERT INTO `users` (`id`, `idcard`, `fullname`, `email`, `phone`, `password`, `deleted`) VALUES
 (1, '123456', 'Roger', 'melchiroger@gmail.com', '0788620994', '123', 0);
 
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `admin`
---
 ALTER TABLE `admin`
   ADD PRIMARY KEY (`id`);
 
---
--- Indexes for table `dataset`
---
 ALTER TABLE `dataset`
   ADD PRIMARY KEY (`id`);
 
---
--- Indexes for table `doctors`
---
 ALTER TABLE `doctors`
   ADD PRIMARY KEY (`id`);
 
---
--- Indexes for table `jobs`
---
 ALTER TABLE `jobs`
   ADD PRIMARY KEY (`id`);
 
---
--- Indexes for table `jobsdone`
---
 ALTER TABLE `jobsdone`
   ADD PRIMARY KEY (`id`);
 
---
--- Indexes for table `users`
---
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `admin`
---
 ALTER TABLE `admin`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
---
--- AUTO_INCREMENT for table `doctors`
---
 ALTER TABLE `doctors`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
---
--- AUTO_INCREMENT for table `jobs`
---
 ALTER TABLE `jobs`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
---
--- AUTO_INCREMENT for table `users`
---
 ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;

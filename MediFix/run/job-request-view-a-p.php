@@ -25,7 +25,7 @@ if (!isset($_SESSION['hbUser_Admin'])) {
             <div>
                 <div class="brand-logo d-flex align-items-center justify-content-between">
                     <a href="./index" class="text-nowrap logo-img">
-                        <img src="../assets/images/logos/dark-logo.svg" width="180" alt="" />
+                        <img src="../assets/images/logos/masaka-logo.png" width="180" alt="" />
                     </a>
                     <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
                         <i class="ti ti-x fs-8"></i>
@@ -82,7 +82,7 @@ if (!isset($_SESSION['hbUser_Admin'])) {
                 <div class="col-lg-12 d-flex align-items-stretch" id="mydiv">
                     <div class="card w-100">
                         <div class="card-body p-4">
-                            <img src="../assets/images/logos/dark-logo.svg" width="180" alt="" style='float: left; margin-right: 20px;'>
+                            <img src="../assets/images/logos/masaka-logo.png" width="180" alt="" style='float: left; margin-right: 20px;'>
                             <br><h6>
                                 REPUBLIC OF RWANDA<br>
                                 MINISTRY OF HEALTH<br>
@@ -228,7 +228,7 @@ if (!isset($_SESSION['hbUser_Admin'])) {
 
 
             <div class="py-6 px-6 text-center">
-                <p class="mb-0 fs-4">Designed and Developed by Jemima</p>
+                <p class="mb-0 fs-4">Masaka Hospital</p>
             </div>
         </div>
     </div>

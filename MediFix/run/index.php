@@ -28,7 +28,7 @@
     <div class="login-content">
       <div class="glass-card">
         <a href="./index.php" class="text-nowrap logo-img text-center d-block py-3 w-100 mb-4">
-          <img src="../assets/images/logos/dark-logo.svg" width="180" alt="MediFix Logo" class="logo-invert">
+          <img src="../assets/images/logos/masaka-logo.png" width="180" alt="MediFix Logo" class="logo-invert">
         </a>
         
         <h2 class="text-center text-gradient fw-bold mb-3" style="font-size: 1.75rem;">Welcome to MediFix</h2>
